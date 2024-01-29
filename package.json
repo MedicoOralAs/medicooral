@@ -1,0 +1,24 @@
+{
+  "name": "medicooral",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-compile": "sass scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aewass/medicooral.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aewass/medicooral/issues"
+  },
+  "homepage": "https://github.com/Aewass/medicooral#readme",
+  "devDependencies": {
+    "sass": "^1.69.1"
+  }
+}

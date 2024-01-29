@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaša Stomatološka Ordinacija</title>
+    <meta
+      name="description"
+      content="Dobrodošli u Vašu stomatološku ordinaciju. Saznajte o našim uslugama i kontaktirajte nas za termine pregleda."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&family=Wix+Madefor+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header id="home">
+      <nav>
+        <img
+          src="../assets/logo.png"
+          alt="logo"
+          class="logo"
+          onclick="scrollToTop()"
+        />
+        <div class="menu">
+          <div id="menu-button" onclick="toggleMenu()">
+            <img width="30" height="30" src="../assets/tooth.png" alt="tooth" />
+            <div class="menu-title">MENU</div>
+          </div>
+          <div id="menu-list">
+            <a class="menu-flag" href="index_en.html">
+              <img
+                src="./assets/icons/icons8-usa-48.png"
+                alt="english language"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <h1>Medico Oral AS</h1>
+
+      <button onclick="scrollToContact()">Kontaktirajte nas!</button>
+    </header>
+
+    <main>
+      <section id="services">
+        <h2><span>Usluge</span></h2>
+        <div class="services">
+          <div class="card">
+            <img src="../assets/checkup.jpg" alt="" />
+            <div>
+              <h3>Moderni dentalni tretmani za savršen osmijeh</h3>
+              <p>
+                Oralna kirurgija je specijalizirana grana stomatologije koja
+                obuhvata različite zahvate usmerene na oralno zdravlje.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../assets/implant.jpg" alt="" />
+            <div>
+              <h3>Dentalna implantologija sa srcem</h3>
+              <p>
+                Dentalni implantati, pioniri u BH s 30+ godina iskustva.
+                Koristimo najnovije sisteme poput "Schutz dental-Implant,"
+                "Dentium," "Swiden & Martina," i druge.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../assets/implant2.jpg" alt="" />
+            <div>
+              <h3>Savršena protetika za savršen osmijeh</h3>
+              <p>
+                Transformiramo osmijehe s vrhunskom protetikom. Iskusni tim
+                stručnjaka u MedicoOral-AS, s preko 30 godina iskustva, pruža
+                personaliziranu i kvalitetnu protetičku skrb.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../assets/xray.jpg" alt="" />
+            <div>
+              <h3>Kvalitetna konzervativna stomatologija za vaše zdravlje</h3>
+              <p>
+                Uz najnovije metode konzervativne stomatologije, MedicoOral-AS
+                brine o vašem oralnom zdravlju. Naš stručni tim nudi vrhunsku
+                skrb i personalizirane tretmane.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="team">
+        <h2><span>Naš tim</span></h2>
+
+        <div class="team">
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>Adi</p>
+            <p>Spec. parodontologije i oralne medicine</p>
+          </div>
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>Adem</p>
+            <p>Spec. parodontologije i oralne medicine</p>
+          </div>
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>Sanja</p>
+            <p>Spec. parodontologije i oralne medicine</p>
+          </div>
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>Amar</p>
+            <p>Spec. parodontologije i oralne medicine</p>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <h2><span>Svjedočanstva</span></h2>
+
+        <div class="testimonials">
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>
+              Iskustvo u MedicoOral-AS bilo je izvanredno! Osoblje je vrlo
+              ljubazno i stručno. Moj osmijeh sada blista, i to zahvaljujući
+              sjajnom timu ove klinike!
+            </p>
+            <p>John Doe</p>
+            <img class="card-quote" src="./assets/icons/quote.svg" alt="" />
+          </div>
+
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>
+              Iskustvo u MedicoOral-AS bilo je izvanredno! Osoblje je vrlo
+              ljubazno i stručno. Moj osmijeh sada blista, i to zahvaljujući
+              sjajnom timu ove klinike!
+            </p>
+            <p>John Doe</p>
+            <img class="card-quote" src="./assets/icons/quote.svg" alt="" />
+          </div>
+
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>
+              Iskustvo u MedicoOral-AS bilo je izvanredno! Osoblje je vrlo
+              ljubazno i stručno. Moj osmijeh sada blista, i to zahvaljujući
+              sjajnom timu ove klinike!
+            </p>
+            <p>Jane Doe</p>
+            <img class="card-quote" src="./assets/icons/quote.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="faq">
+        <h2><span>Česta Pitanja</span></h2>
+        <div class="faq">
+          <details>
+            <summary>Lorem Ipsum dolor sit??</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus.
+            </p>
+          </details>
+          <details>
+            <summary>Lorem Ipsum dolor sit??</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus.
+            </p>
+          </details>
+          <details>
+            <summary>Lorem Ipsum dolor sit??</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus.
+            </p>
+          </details>
+          <details>
+            <summary>Lorem Ipsum dolor sit??</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section id="contact">
+        <h2><span>Kontakt</span></h2>
+        <div class="contact">
+          <form
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+            id="contact"
+            class="contact__form"
+            method="POST"
+          >
+            <div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ime"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <textarea
+              id="message"
+              name="message"
+              rows="8"
+              placeholder="Unesite Vasu poruku"
+              required
+            ></textarea>
+            <div data-netlify-recaptcha="true" class="captcha"></div>
+            <button type="submit">
+              <p>
+                Pošalji email
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-envelope-heart-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555l-4.2 2.568a2.785 2.785 0 0 0-.051-.105c-.666-1.3-2.363-1.917-3.699-1.25-1.336-.667-3.033-.05-3.699 1.25l-.05.105L.05 3.555ZM11.584 8.91a4.694 4.694 0 0 1-.073.139L16 11.8V4.697l-4.003 2.447c.027.562-.107 1.163-.413 1.767Zm-4.135 3.05c-1.048-.693-1.84-1.39-2.398-2.082L.19 12.856A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144L10.95 9.878c-.559.692-1.35 1.389-2.398 2.081L8 12.324l-.551-.365ZM4.416 8.91c-.306-.603-.44-1.204-.413-1.766L0 4.697v7.104l4.49-2.752a4.742 4.742 0 0 1-.074-.138Z"
+                  />
+                  <path
+                    d="M8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+                  />
+                </svg>
+              </p>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="about">
+        <h3>Medico Oral AS</h3>
+        <h4>Više nego dentalna klinika</h4>
+        <p>
+          Za 16 proteklih godina, u početku Specijalistička stomatološka
+          ordinacija sa oralnom kirurgijom, koja je ubrzo prerasla u Polikliniku
+          “Medico Oral AS”, afirmisala se u gradu Bihaću, Unsko-sanskom kantonu,
+          Bosni i Hercegovini, ali i diljem svijeta, u respektabilnu zdravstvenu
+          ustanovu.
+          <br />
+          Opremljeni smo najsavremenijom opremom i visokostručnim kadrovima,
+          koji svakodnevno pružaju zdravstvene usluge po najvišim standardima.
+        </p>
+      </section>
+
+      <section>
+        <ul>
+          <li>
+            <img
+              src="./assets/icons/calendar-check-fill.svg"
+              alt="Radno vrije"
+            />
+            Ponedjeljak - Petak 09:00 - 19:00
+          </li>
+          <li>
+            <img src="./assets/icons/geo-alt-fill.svg" alt="Lokacija" /> Džemala
+            Bijedića 19, Bihać 77000
+          </li>
+          <li>
+            <img
+              src="./assets/icons/telephone-fill.svg"
+              alt="Kontakt telefon"
+            />
+            037 310-745
+          </li>
+          <li>
+            <img
+              src="./assets/icons/envelope-heart-fill.svg"
+              alt="Email adresa"
+            />
+            medicooral.as@gmail.com
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <span class="social">
+          <a href="https://www.facebook.com/medicooralas" target="_blank">
+            <img src="./assets/icons/facebook.svg" alt="facebook" />
+          </a>
+          <a href="https://www.instagram.com/medicooralas/" target="_blank">
+            <img src="./assets/icons/instagram.svg" alt="instagram" />
+          </a>
+        </span>
+        <p id="copyright"></p>
+        <a href="http://mirzamuric.com" target="_blank">Development: Mirza</a>
+      </section>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your dentist clinic</title>
+    <meta
+      name="description"
+      content="Welcome to your dental clinic. Learn about our services and contact us to schedule appointments."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&family=Wix+Madefor+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header id="home">
+      <nav>
+        <img
+          src="../assets/logo.png"
+          alt="logo"
+          class="logo"
+          onclick="scrollToTop()"
+        />
+        <div class="menu">
+          <div id="menu-button" onclick="toggleMenu()">
+            <img width="30" height="30" src="../assets/tooth.png" alt="tooth" />
+            <div class="menu-title">MENU</div>
+          </div>
+          <div id="menu-list">
+            <a class="menu-flag" href="index.html">
+              <img
+                alt="bosnian language"
+                src="./assets/icons/icons8-bosnia-and-herzegovina-48.png"
+                alt="bosnian language"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <h1>Medico Oral AS</h1>
+
+      <button onclick="scrollToContact()">Contact Us!</button>
+    </header>
+
+    <main>
+      <section id="services">
+        <h2><span>Services</span></h2>
+        <div class="services">
+          <div class="card">
+            <img src="../assets/checkup.jpg" alt="" />
+            <div>
+              <h3>Modern Dental Treatments for a Perfect Smile</h3>
+              <p>
+                Oral surgery is a specialized branch of dentistry that
+                encompasses various procedures aimed at oral health.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../assets/implant.jpg" alt="" />
+            <div>
+              <h3>Dental Implantology with Heart</h3>
+              <p>
+                Dental implants, pioneers in BH with 30+ years of experience. We
+                use the latest systems such as "Schutz dental-Implant,"
+                "Dentium," "Swiden & Martina," and others.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../assets/implant2.jpg" alt="" />
+            <div>
+              <h3>Perfect Prosthetics for a Perfect Smile</h3>
+              <p>
+                Transforming smiles with premium prosthetics. The experienced
+                team at MedicoOral-AS, with over 30 years of experience,
+                provides personalized and quality prosthetic care.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../assets/xray.jpg" alt="" />
+            <div>
+              <h3>Quality Conservative Dentistry for Your Health</h3>
+              <p>
+                With the latest methods of conservative dentistry, MedicoOral-AS
+                takes care of your oral health. Our expert team offers top-notch
+                care and personalized treatments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team">
+        <h2><span>Our Team</span></h2>
+
+        <div class="team">
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>Adi</p>
+            <p>Specialist in Periodontology and Oral Medicine</p>
+          </div>
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>Adem</p>
+            <p>Specialist in Periodontology and Oral Medicine</p>
+          </div>
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>Sanja</p>
+            <p>Specialist in Periodontology and Oral Medicine</p>
+          </div>
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>Amar</p>
+            <p>Specialist in Periodontology and Oral Medicine</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h2><span>Testimonials</span></h2>
+
+        <div class="testimonials">
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>
+              The experience at MedicoOral-AS was exceptional! The staff is very
+              kind and professional. My smile now shines, all thanks to the
+              fantastic team at this clinic!
+            </p>
+            <p>John Doe</p>
+            <img class="card-quote" src="./assets/icons/quote.svg" alt="" />
+          </div>
+
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>
+              The experience at MedicoOral-AS was exceptional! The staff is very
+              kind and professional. My smile now shines, all thanks to the
+              fantastic team at this clinic!
+            </p>
+            <p>John Doe</p>
+            <img class="card-quote" src="./assets/icons/quote.svg" alt="" />
+          </div>
+
+          <div class="card">
+            <img src="../assets/person.jpg" alt="" />
+            <p>
+              The experience at MedicoOral-AS was exceptional! The staff is very
+              kind and professional. My smile now shines, all thanks to the
+              fantastic team at this clinic!
+            </p>
+            <p>Jane Doe</p>
+            <img class="card-quote" src="./assets/icons/quote.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <h2><span>Frequent Questions</span></h2>
+        <div class="faq">
+          <details>
+            <summary>Lorem Ipsum dolor sit??</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus.
+            </p>
+          </details>
+          <details>
+            <summary>Lorem Ipsum dolor sit??</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus.
+            </p>
+          </details>
+          <details>
+            <summary>Lorem Ipsum dolor sit??</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus.
+            </p>
+          </details>
+          <details>
+            <summary>Lorem Ipsum dolor sit??</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus. Quisquam
+              voluptatum, quibusdam, voluptate, quia quod quos voluptas
+              consequuntur quas voluptatibus quidem doloribus.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2><span>Contact</span></h2>
+        <div class="contact">
+          <form
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+            id="contact"
+            class="contact__form"
+            method="POST"
+          >
+            <div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <textarea
+              id="message"
+              name="message"
+              rows="8"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit">
+              <p>
+                Send email
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-envelope-heart-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555l-4.2 2.568a2.785 2.785 0 0 0-.051-.105c-.666-1.3-2.363-1.917-3.699-1.25-1.336-.667-3.033-.05-3.699 1.25l-.05.105L.05 3.555ZM11.584 8.91a4.694 4.694 0 0 1-.073.139L16 11.8V4.697l-4.003 2.447c.027.562-.107 1.163-.413 1.767Zm-4.135 3.05c-1.048-.693-1.84-1.39-2.398-2.082L.19 12.856A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144L10.95 9.878c-.559.692-1.35 1.389-2.398 2.081L8 12.324l-.551-.365ZM4.416 8.91c-.306-.603-.44-1.204-.413-1.766L0 4.697v7.104l4.49-2.752a4.742 4.742 0 0 1-.074-.138Z"
+                  />
+                  <path
+                    d="M8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+                  />
+                </svg>
+              </p>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="about">
+        <h3>Medico Oral AS</h3>
+        <h4>More than a dental clinic</h4>
+        <p>
+          Over the past 16 years, initially as a Specialist Dental Office with
+          Oral Surgery, which soon grew into the Polyclinic "Medico Oral AS," we
+          have established ourselves in the city of Bihać, Unsko-sanski canton,
+          Bosnia and Herzegovina, and worldwide as a reputable healthcare
+          institution.
+          <br />
+          Equipped with state-of-the-art facilities and highly skilled
+          professionals, we provide healthcare services daily at the highest
+          standards.
+        </p>
+      </section>
+
+      <section>
+        <ul>
+          <li>
+            <img
+              src="./assets/icons/calendar-check-fill.svg"
+              alt="Working hours"
+            />
+            Monday - Friday 09:00 - 19:00
+          </li>
+          <li>
+            <img src="./assets/icons/geo-alt-fill.svg" alt="Location" /> Džemala
+            Bijedića 19, Bihać 77000
+          </li>
+          <li>
+            <img src="./assets/icons/telephone-fill.svg" alt="Contact phone" />
+            037 310-745
+          </li>
+          <li>
+            <img
+              src="./assets/icons/envelope-heart-fill.svg"
+              alt="Email address"
+            />
+            medicooral.as@gmail.com
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section>
+        <span class="social">
+          <a href="https://www.facebook.com/medicooralas" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+              />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/medicooralas/" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              />
+            </svg>
+          </a>
+        </span>
+        <p id="copyright"></p>
+        <a href="http://mirzamuric.com" target="_blank">Made by: Mirza</a>
+      </section>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

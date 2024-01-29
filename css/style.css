@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Schibsted Grotesk", sans-serif;
+  background-color: white;
+  color: #1b3b6f;
+  font-size: larger;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: "Wix Madefor Display", sans-serif;
+  color: #1c7293;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: "Wix Madefor Display", sans-serif;
+  color: #1b3b6f;
+}
+
+header {
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #1199ee;
+  background-image: url("../assets/clinic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header h1 {
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 768px) {
+  header h1 {
+    font-size: 100px;
+  }
+}
+header button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: gold;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+header button:hover {
+  background-color: #1b3b6f;
+  color: gold;
+  transform: scale(1.2);
+}
+header nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  z-index: 3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header nav .logo {
+  height: 40px;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+header nav .menu #menu-button {
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+header nav .menu #menu-button img {
+  transition: all 0.3s ease;
+}
+header nav .menu #menu-button.active img {
+  transform: rotate(45deg);
+}
+header nav .menu-title {
+  font-size: small;
+  font-weight: bold;
+  color: gold;
+}
+header nav .menu-flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  gap: 5px;
+}
+header nav .menu-flag img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header nav .menu-flag img:hover {
+  transform: scale(1.1);
+}
+header nav .menu #menu-list {
+  position: fixed;
+  right: -100%;
+  height: 100dvh;
+  width: 100%;
+  background: white;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+header nav .menu #menu-list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+header nav .menu #menu-list ul li {
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+header nav .menu #menu-list ul li a {
+  color: #1b3b6f;
+  transition: color 0.3s ease;
+}
+header nav .menu #menu-list ul li a:hover {
+  color: gold;
+}
+header nav .menu #menu-list.active {
+  right: 0;
+}
+
+main {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+main section h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #1c7293;
+  line-height: 0.1em;
+  margin: 0 auto 50px auto;
+}
+@media screen and (min-width: 767px) {
+  main section h2 {
+    width: 50%;
+  }
+}
+main section h2 span {
+  background: white;
+  padding: 0 10px;
+}
+main section .services .card {
+  display: flex;
+  margin-bottom: 100px;
+  gap: 50px;
+  align-items: center;
+}
+main section .services .card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+main section .services .card:nth-child(odd) {
+  flex-direction: row;
+}
+main section .services .card img {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+}
+main section .services .card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main section .services .card h3 {
+  margin: 10px 0;
+  font-weight: 700;
+  text-align: start;
+}
+main section .services .card p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1c7293;
+}
+@media only screen and (max-width: 767px) {
+  main section .services .card {
+    flex-direction: column;
+    gap: 20px;
+  }
+  main section .services .card:nth-child(even) {
+    flex-direction: column;
+  }
+  main section .services .card:nth-child(odd) {
+    flex-direction: column;
+  }
+  main section .services .card img {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+main section .team {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  main section .team {
+    gap: 50px;
+    flex-direction: row;
+  }
+}
+main section .team .card {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section .team .card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+main section .team .card p {
+  line-height: 1.5;
+  color: #1c7293;
+  text-align: center;
+}
+main section .testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  main section .testimonials {
+    gap: 10px;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  main section .testimonials {
+    gap: 50px;
+    flex-direction: row;
+  }
+}
+main section .testimonials .card {
+  z-index: 1;
+  flex: 1;
+  flex-basis: calc(33.333% - 40px);
+  background-color: #e8f7ff;
+  padding: 50px 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 450px;
+  margin-bottom: 20px;
+}
+main section .testimonials .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+main section .testimonials .card p {
+  color: #1c7293;
+}
+main section .testimonials .card p:first-of-type {
+  font-weight: bolder;
+  line-height: 1.5;
+  margin-bottom: 50px;
+  flex-grow: 1;
+}
+main section .testimonials .card p:last-of-type {
+  margin-bottom: 20px;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+main section .testimonials .card-quote {
+  position: absolute;
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  color: #1b3b6f;
+}
+main section .faq {
+  padding: 20px 0;
+}
+main section .faq summary {
+  outline: none;
+  color: #1c7293;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  display: block;
+  padding: 15px 5px;
+}
+main section .faq details {
+  background-color: #f8f6f6;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  font-family: "Schibsted Grotesk", sans-serif;
+  transition: background-color 0.3s ease;
+}
+main section .faq details:hover {
+  background-color: #e8f7ff;
+}
+main section .faq details:first-of-type {
+  padding-top: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+main section .faq details:last-of-type {
+  padding-bottom: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+main section .faq details[open] {
+  background-color: #e8f7ff;
+}
+main section .faq details p {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1c7293;
+}
+main section .contact__form {
+  display: flex;
+  flex-direction: column;
+}
+main section .contact__form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main section .contact__form input {
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid #1b3b6f;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  color: #1c7293;
+}
+main section .contact__form input::-moz-placeholder {
+  color: #1c7293;
+}
+main section .contact__form input::placeholder {
+  color: #1c7293;
+}
+main section .contact__form textarea {
+  margin: 5px 0;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-bottom: 1px solid #1b3b6f;
+  color: #1c7293;
+}
+main section .contact__form textarea::-moz-placeholder {
+  color: #1c7293;
+}
+main section .contact__form textarea::placeholder {
+  color: #1c7293;
+}
+main section .contact__form button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background: #1b3b6f;
+  color: gold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto 0 auto;
+}
+main section .contact__form button p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section .contact__form button p svg {
+  margin-left: 10px;
+}
+main section .contact__form button:hover {
+  background-color: gold;
+  color: #1b3b6f;
+}
+@media only screen and (min-width: 768px) {
+  main section .contact__form div {
+    gap: 20px;
+    flex-direction: row;
+  }
+}
+main section .contact__form .captcha {
+  margin: 20px 0;
+}
+main section .contact__map {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+footer {
+  background-color: #1199ee;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+footer hr {
+  margin: 20px 0;
+  color: white;
+}
+footer section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+footer section h3,
+footer section h4 {
+  color: white;
+}
+footer section p {
+  margin-top: 20px;
+  max-width: 700px;
+  text-align: start;
+}
+footer section ul {
+  list-style: none;
+}
+footer section ul li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+footer section ul li img {
+  margin-right: 10px;
+}
+footer section .social {
+  display: flex;
+  justify-content: center;
+}
+footer section .social a {
+  margin: 0 10px;
+}
+footer section .social a img {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  transition: transform 0.3s ease;
+}
+footer section .social a:hover img {
+  transform: scale(1.2);
+}
+footer section #copyright {
+  text-align: center;
+  max-width: 100%;
+}
+footer section a {
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  font-size: small;
+}
+footer section a:hover {
+  color: gold;
+}/*# sourceMappingURL=style.css.map */
