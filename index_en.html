@@ -19,6 +19,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header id="home">
@@ -55,7 +56,7 @@
       <section id="services">
         <h2><span>Services</span></h2>
         <div class="services">
-          <div class="card">
+          <div class="card" data-aos="fade-right">
             <img src="../assets/checkup.jpg" alt="" />
             <div>
               <h3>Modern Dental Treatments for a Perfect Smile</h3>
@@ -65,7 +66,7 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-left">
             <img src="../assets/implant.jpg" alt="" />
             <div>
               <h3>Dental Implantology with Heart</h3>
@@ -76,7 +77,7 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-right">
             <img src="../assets/implant2.jpg" alt="" />
             <div>
               <h3>Perfect Prosthetics for a Perfect Smile</h3>
@@ -87,7 +88,7 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-left">
             <img src="../assets/xray.jpg" alt="" />
             <div>
               <h3>Quality Conservative Dentistry for Your Health</h3>
@@ -105,22 +106,22 @@
         <h2><span>Our Team</span></h2>
 
         <div class="team">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="../assets/person.jpg" alt="" />
             <p>Adi</p>
             <p>Specialist in Periodontology and Oral Medicine</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="../assets/person.jpg" alt="" />
             <p>Adem</p>
             <p>Specialist in Periodontology and Oral Medicine</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="../assets/person.jpg" alt="" />
             <p>Sanja</p>
             <p>Specialist in Periodontology and Oral Medicine</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="../assets/person.jpg" alt="" />
             <p>Amar</p>
             <p>Specialist in Periodontology and Oral Medicine</p>
@@ -132,7 +133,7 @@
         <h2><span>Testimonials</span></h2>
 
         <div class="testimonials">
-          <div class="card">
+          <div class="card" data-aos="fade-left">
             <img src="../assets/person.jpg" alt="" />
             <p>
               The experience at MedicoOral-AS was exceptional! The staff is very
@@ -143,7 +144,7 @@
             <img class="card-quote" src="./assets/icons/quote.svg" alt="" />
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="../assets/person.jpg" alt="" />
             <p>
               The experience at MedicoOral-AS was exceptional! The staff is very
@@ -154,7 +155,7 @@
             <img class="card-quote" src="./assets/icons/quote.svg" alt="" />
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-right">
             <img src="../assets/person.jpg" alt="" />
             <p>
               The experience at MedicoOral-AS was exceptional! The staff is very
@@ -355,5 +356,9 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

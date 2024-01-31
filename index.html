@@ -18,6 +18,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header id="home">
@@ -53,7 +54,7 @@
       <section id="services">
         <h2><span>Usluge</span></h2>
         <div class="services">
-          <div class="card">
+          <div class="card" data-aos="fade-right">
             <img src="../assets/checkup.jpg" alt="" />
             <div>
               <h3>Moderni dentalni tretmani za savršen osmijeh</h3>
@@ -63,7 +64,7 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-left">
             <img src="../assets/implant.jpg" alt="" />
             <div>
               <h3>Dentalna implantologija sa srcem</h3>
@@ -74,7 +75,7 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-right">
             <img src="../assets/implant2.jpg" alt="" />
             <div>
               <h3>Savršena protetika za savršen osmijeh</h3>
@@ -85,7 +86,7 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-left">
             <img src="../assets/xray.jpg" alt="" />
             <div>
               <h3>Kvalitetna konzervativna stomatologija za vaše zdravlje</h3>
@@ -102,22 +103,22 @@
         <h2><span>Naš tim</span></h2>
 
         <div class="team">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="../assets/person.jpg" alt="" />
             <p>Adi</p>
             <p>Spec. parodontologije i oralne medicine</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="../assets/person.jpg" alt="" />
             <p>Adem</p>
             <p>Spec. parodontologije i oralne medicine</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="../assets/person.jpg" alt="" />
             <p>Sanja</p>
             <p>Spec. parodontologije i oralne medicine</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="../assets/person.jpg" alt="" />
             <p>Amar</p>
             <p>Spec. parodontologije i oralne medicine</p>
@@ -128,7 +129,7 @@
         <h2><span>Svjedočanstva</span></h2>
 
         <div class="testimonials">
-          <div class="card">
+          <div class="card" data-aos="fade-left">
             <img src="../assets/person.jpg" alt="" />
             <p>
               Iskustvo u MedicoOral-AS bilo je izvanredno! Osoblje je vrlo
@@ -139,7 +140,7 @@
             <img class="card-quote" src="./assets/icons/quote.svg" alt="" />
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="../assets/person.jpg" alt="" />
             <p>
               Iskustvo u MedicoOral-AS bilo je izvanredno! Osoblje je vrlo
@@ -150,7 +151,7 @@
             <img class="card-quote" src="./assets/icons/quote.svg" alt="" />
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-right">
             <img src="../assets/person.jpg" alt="" />
             <p>
               Iskustvo u MedicoOral-AS bilo je izvanredno! Osoblje je vrlo
@@ -327,5 +328,9 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
