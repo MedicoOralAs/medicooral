@@ -9,6 +9,7 @@ window.onload = function () {
       { text: "Usluge", sectionId: "#services" },
       { text: "Naš tim", sectionId: "#team" },
       { text: "Svjedočanstva", sectionId: "#testimonials" },
+      { text: "Naša historija", sectionId: "#history" },
       { text: "Česta pitanja", sectionId: "#faq" },
       { text: "Kontakt", sectionId: "#contact" },
       { text: "O nama", sectionId: "#about" }
@@ -20,6 +21,7 @@ window.onload = function () {
       { text: "Services", sectionId: "#services" },
       { text: "Our Team", sectionId: "#team" },
       { text: "Testimonials", sectionId: "#testimonials" },
+      { text: "Our History", sectionId: "#history" },
       { text: "Frequent Questions", sectionId: "#faq" },
       { text: "Contact", sectionId: "#contact" },
       { text: "About Us", sectionId: "#about" }

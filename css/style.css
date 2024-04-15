@@ -58,6 +58,9 @@ header {
   background-size: cover;
   background-position: center;
 }
+header::after {
+  content: "";
+}
 header h1 {
   color: white;
   margin-bottom: 20px;
@@ -250,13 +253,17 @@ main section .services .card p {
   }
 }
 main section .team {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 @media only screen and (min-width: 992px) {
   main section .team {
     gap: 50px;
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
   }
 }
 main section .team .card {
@@ -286,12 +293,14 @@ main section .testimonials {
   main section .testimonials {
     gap: 10px;
     flex-direction: row;
+    align-items: stretch;
   }
 }
 @media only screen and (min-width: 1200px) {
   main section .testimonials {
     gap: 50px;
     flex-direction: row;
+    align-items: stretch;
   }
 }
 main section .testimonials .card {
@@ -335,6 +344,41 @@ main section .testimonials .card-quote {
   height: 50px;
   right: 0;
   color: #1b3b6f;
+}
+main section .history img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+main section .history p {
+  margin: 20px 0;
+  color: #1c7293;
+}
+main section .history__cta {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 767px) {
+  main section .history__cta {
+    justify-content: flex-start;
+  }
+}
+main section .history__cta button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: gold;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+main section .history__cta button:hover {
+  background-color: #1b3b6f;
+  color: gold;
+  transform: scale(1.2);
 }
 main section .faq {
   padding: 20px 0;
