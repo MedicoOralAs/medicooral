@@ -498,10 +498,8 @@ main section .contact__form .captcha {
   margin: 20px 0;
 }
 main section .contact__map {
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 12px;
-  overflow: hidden;
+  margin-top: 50px;
+  border-radius: 20px;
 }
 
 footer {
