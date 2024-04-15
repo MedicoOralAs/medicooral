@@ -53,10 +53,10 @@ header {
   flex-direction: column;
   text-align: center;
   background-color: #1199ee;
-  background-image: url("../assets/clinic.jpg");
+  background-image: url("../assets/heroimg.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 70%;
 }
 header::after {
   content: "";
