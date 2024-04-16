@@ -62,9 +62,10 @@ header::after {
   content: "";
 }
 header h1 {
-  color: white;
+  color: beige;
   margin-bottom: 20px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
   header h1 {
@@ -72,19 +73,21 @@ header h1 {
   }
 }
 header button {
+  background-image: linear-gradient(to right, #f2994a 0%, #f2c94c 51%, #f2994a 100%);
   padding: 15px 30px;
   border-radius: 30px;
   border: none;
-  background-color: gold;
+  transition: 0.5s;
+  background-size: 200% auto;
   color: white;
   font-weight: bold;
   font-size: 20px;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 header button:hover {
-  background-color: #1b3b6f;
-  color: gold;
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
   transform: scale(1.2);
 }
 header nav {
@@ -101,7 +104,7 @@ header nav {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 header nav .logo {
-  height: 40px;
+  height: 78px;
   z-index: 2;
   position: relative;
   cursor: pointer;
@@ -120,7 +123,7 @@ header nav .menu #menu-button.active img {
 header nav .menu-title {
   font-size: small;
   font-weight: bold;
-  color: gold;
+  color: #c99b37;
 }
 header nav .menu-flag {
   display: flex;
@@ -171,7 +174,7 @@ header nav .menu #menu-list ul li a {
   transition: color 0.3s ease;
 }
 header nav .menu #menu-list ul li a:hover {
-  color: gold;
+  color: #c99b37;
 }
 header nav .menu #menu-list.active {
   right: 0;
@@ -365,19 +368,21 @@ main section .history__cta {
   }
 }
 main section .history__cta button {
+  background-image: linear-gradient(to right, #f2994a 0%, #f2c94c 51%, #f2994a 100%);
   padding: 15px 30px;
   border-radius: 30px;
   border: none;
-  background-color: gold;
+  transition: 0.5s;
+  background-size: 200% auto;
   color: white;
   font-weight: bold;
   font-size: 20px;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 main section .history__cta button:hover {
-  background-color: #1b3b6f;
-  color: gold;
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
   transform: scale(1.2);
 }
 main section .faq {
@@ -462,15 +467,23 @@ main section .contact__form textarea::placeholder {
   color: #1c7293;
 }
 main section .contact__form button {
+  background-image: linear-gradient(to right, #f2994a 0%, #f2c94c 51%, #f2994a 100%);
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
   padding: 15px 30px;
   border-radius: 30px;
   border: none;
   outline: none;
   font-size: 20px;
-  background: #1b3b6f;
-  color: gold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   width: 100%;
   max-width: 600px;
   margin: 20px auto 0 auto;
@@ -485,8 +498,9 @@ main section .contact__form button p svg {
   margin-left: 10px;
 }
 main section .contact__form button:hover {
-  background-color: gold;
-  color: #1b3b6f;
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
+  transform: scale(1.2);
 }
 @media only screen and (min-width: 768px) {
   main section .contact__form div {
@@ -569,5 +583,5 @@ footer section a {
   font-size: small;
 }
 footer section a:hover {
-  color: gold;
+  color: #c99b37;
 }/*# sourceMappingURL=style.css.map */
